@@ -25,8 +25,24 @@ void reverse_str(char *str) {
     }
 }
 
+void reverse_str2(char *str) {
+    if(str) {
+        size_t len = strlen(str);
+        char c;
+        
+        int i;
+        for(i = 0; i < len/2; i++) {
+            c = str[len-i-1];
+            str[len-i-1] = str[i];
+            str[i] = c;
+        }
+    }
+}
+
 int main() {
     char str[] = "hello";
     reverse_str(str);
+    puts(str);
+    reverse_str2(str);
     puts(str);
 }
