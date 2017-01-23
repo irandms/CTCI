@@ -56,6 +56,16 @@ image *rotate_image(image *img) {
     return ret;
 }
 
+image *rotate_image2(image *img) {
+    int i, j;
+
+    for(i = 0; i < img->width; i++) {
+        for(j = 0; j < img->height; j++) {
+            
+        }
+    }
+}
+
 image *make_img(int height, int width) {
     int i;
     image *img = malloc(sizeof(image));
