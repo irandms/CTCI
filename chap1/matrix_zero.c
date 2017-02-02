@@ -85,7 +85,7 @@ int **matrix_zero(int **m, const int rows, const int cols) {
     }
 
     int **m_new = matrix_gen(rows, cols);
-    
+
     for(i = 0; i < rows; i++) {
         if(zero_rows[i]) {
             set_row(m_new, i, cols, 0);
